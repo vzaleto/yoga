@@ -1,0 +1,22 @@
+{
+  "name": "yoga",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "vzaleto <vzaleto@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "open-sans": "^1.1.0",
+    "jquery": "^3.2.1"
+  }
+}
