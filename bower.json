@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "open-sans": "^1.1.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "flexslider": "FlexSlider#^2.6.4",
+    "slick-carousel": "^1.8.1"
   }
 }
