@@ -1,57 +1,46 @@
-;(function() {
 
-  $(document).ready(function() {
-
-    var sliders = function() {
-      
-      var backImg = [];
-      backImg[0] = src="img/pic-14.png";
-      backImg[1] =  src="img/pic-13.png";
-      backImg[2] = src="img/pic-12.png";
-      
-      var i = 0;
-      var x = (backImg.length) - 1;
-      var int = 3500;
-      
-      var initialize = function() {
-        attachEvents();
-      };
-      
-      var attachEvents = function() {
-        $('.btnLeft').click(function() {
-          left();
-        });
-
-        $('.btnRight').click(function() {
-          right();
-        });
-      };
-
-      var changeImg = function() {
-        $('.sliders').css('background-image', 'url(' + backImg[i] + ')');
-      }
-
-      var left = function() {
-        (i <= 0) ? i = 3 : i--;
-        changeImg(i);
-      };
-
-      var right = function() {
-        (i >= x) ? i = 0 : i++;
-        changeImg(i);
-      };
-
-      window.setInterval(right, int);
-
-      changeImg(i);
-      return initialize();
-    }
-
-    sliders();
-
+$(document).ready(function(){
+  $('.sliders').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1
+});
   });
-  
-})();
+
+
+
+
+$(document).ready(function(){
+  $('.slider-reviews').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1
+});
+  });
+
+
+
+
+/*$(document).ready(function(){
+function breakOverflow(elm) {
+   var top = elm.offset().top;
+   var left = elm.offset().left;
+   elm.appendTo($('.slider-reviews_inner'));
+   elm.css({
+      position: 'absolute',
+      left: 36+'%',
+      top: 87+'%',
+      bottom: 'auto',
+      right: 'auto',
+      'z-index': 10000
+   });
+}
+breakOverflow($('.item-icon'));
+}); */
+
+
 
 
 /*
