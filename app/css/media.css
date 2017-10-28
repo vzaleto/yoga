@@ -14,6 +14,8 @@
 	.top-form {
 		margin: 0px 10px 0 147px;
 	}
+/*------------- content -----------------*/
+
 	.content h3 {
 		width: 33%;
 	}
@@ -51,9 +53,21 @@
 /*------------- content-tickets -----------------*/
 
 .content-tickets .content-tickets_inner {    
-    width: 31%; 
-
+    width: 30%; 
 	}
+
+/*------------- footer -----------------*/
+
+.footer-top .item-phone {
+   
+    margin-right: 60px;
+}
+.footer-top .item-seccond {
+    
+    margin: 0px 0px 0 80px;
+}
+
+
 
 }
 
@@ -121,10 +135,34 @@
     width: 65%;
 }
 
+/*------------- content-tickets -----------------*/
 
+.content-tickets .content-tickets_inner {   
+    width: 30%;
+ 
+}
+.top-text span:nth-child(1) {
+   
+   
+    top: 36%;
+    left: 12%;
+}
+.top-text span:nth-child(2) {
+    font-size: 64px;
+}
 
+/*------------- footer -----------------*/
 
-
+.footer-top .item-seccond {
+    width: 45%;
+    float: left;
+    margin: 0 0px 0 34px;
+}
+.footer-top .item-phone {
+    float: left;
+    width: 41%;
+    margin-right: 24px;
+}
 
 
 	}
@@ -169,6 +207,8 @@
 			width: 100%;
 
 		}
+
+/*------------- content-slider -----------------*/
 
 .content-slider .item-inner_left {
     width: 47%;
@@ -230,6 +270,44 @@
     width: 65%;
 }
 
+/*------------- content-tickets -----------------*/
+
+.content-tickets .content-tickets_inner {
+    width: 29%;
+    }
+.content-tickets .content-tickets_inner ul li {
+    font-size: 15px;
+    padding: 14px 0px;
+}
+.top-text span:nth-child(2) {
+    font-size: 46px;
+}
+.top-text span:nth-child(3) {
+    font-size: 16px;
+}
+.top-text {
+    padding: 22px 0px 9px 33px;  
+    border-radius: 15px 15px 0 0;
+}
+.top-text span:nth-child(1) {
+   
+    top: 35%;
+    left: 14%;
+}
+/*------------- footer -----------------*/
+.footer-top .item-seccond {
+    width: 55%;
+    float: left;
+    margin: 0 0px 0 6px;
+}
+.footer-top .item-phone {
+    float: left;
+    width: 41%;
+    margin-right: 9px;
+}
+
+
+
 
 
 	}
@@ -286,12 +364,26 @@
 			width: 50%;
 		}
 
-
-
-
-
+		.content-tickets .content-tickets_inner {
+   
+    width: 51%;
+    float: none;
+    margin: 0px auto;
+    
+}
+.content-tickets .content-tickets_inner:last-child {
+    margin: 0 auto;
+}
+.top-text span:nth-child(1) {    
+    top: 38%;
+    left: 12%;
+}
+.top-text span:nth-child(2) {
+    font-size: 65px;
+}
 
 	}
+
 
 @media only screen and  (max-width : 767px){
 	.content-slider .item-inner_left {
@@ -357,7 +449,23 @@
     width: 49%;
     
 }
-
+.footer-top .item-first {
+    width: 100%;
+    float: none;
+}
+.footer-top .item-seccond {
+    width: 100%;
+    float: none;
+    margin: 18px 0px 0 0px;
+}
+.footer-top .item-phone {
+    float: left;
+    width: 41%;
+    margin-right: 9px;
+}
+.footer-top .item-first p {
+    margin: 10px 0px 22px 0;
+}
 }
 
 	@media only screen and  (max-width : 580px){
@@ -398,7 +506,15 @@
 			width: 30%;
 		}
 
-
+		.content-tickets .content-tickets_inner {
+    width: 78%;
+    float: none;
+    margin: 0px auto;
+    
+}
+.content-tickets .content-tickets_inner:last-child {
+    margin: 0 auto;
+}
 
 	}
 	@media only screen and (min-width : 480px) and (max-width : 579px){
@@ -464,18 +580,79 @@
 			margin: 0 auto;
 			float: none;
 		}
+		.top-text span:nth-child(1) {
+   
+    top: 41%;
+    left: 19%;
+}
 
 	}
-	@media only screen and (min-width : 321px) and (max-width : 479px){
+	@media only screen and (min-width : 320px) and (max-width : 479px){
+		
 		.content h3 {
 			font-size: 20px;
 			width:80%;    
 		}
 
 		.content h4 {
-			width: 41%;
-		}
+    width: 45%;
+}
+		.item-box {
+    max-width: 89%;
+}
+.item-box .item-box_inner {
+    width: 100%;
+    
+    float: none;
+    margin: 0 0px 29px 0;
+}
+.item-box .item-box_inner .img-item {
+    float: none;
+    width: 100%;
+}
+.item-box .item-box_inner .text {
+    padding: 4px 3px 3px 8px;
+    width: 97%;
+    float: none;
+}
+.item-box .item-box_inner .img-item img {
+    width: 100%;
+    display: block;
+}
 
+.content-improved .content-icon .item-colum h5 {  
+    width: 100%; 
+}
+
+.content-improved .content-icon_bottom .item-colum:nth-child(4) h5 {
+    width: 95%;
+}
+
+.top-text span:nth-child(2) {
+    font-size: 38px;
+}
+.top-text span:nth-child(1) {
+    top: 35%;
+    left: 14%;
+    font-size: 28px;
+}
+.content-tickets .content-tickets_inner ul li {
+    font-size: 15px;
+    position: relative;
+    padding: 10px 0px;
+}
+.content-tickets .content-tickets_inner ul {
+    margin: 27px 0;
+    padding: 0 0 25px 0;
+}
+.footer-top .item-phone {
+    float: none;
+    width: 100%;
+    margin-right: 9px;
+}
+.footer-top .item-third {
+    float: none;
+}
 
 	}
 	/* Custom, iPhone Retina */
@@ -507,9 +684,11 @@
 			font-size: 20px;
 			width:90%;
 		}
-		.content h4 {
-			width: 41%;
-		}
+		
+		.top-form {
+    width: 75%;
+    margin: 0px 0px 0 0px;
+}
 
 	}
 

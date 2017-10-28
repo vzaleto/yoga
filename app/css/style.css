@@ -422,6 +422,7 @@ a {
     .content-improved .content-icon_bottom .item-colum:nth-child(2) h5 {
       width: 66%; }
 
+/*=========== content-tickets ==============*/
 .content-tickets {
   width: 88%;
   margin: 0 auto;
@@ -486,6 +487,10 @@ a {
       font-size: 67px; }
     .top-text span:nth-child(3) {
       font-size: 18px; }
+
+/*================= slider-reviews ==============*/
+.box-relative {
+  position: relative; }
 
 .slider-reviews {
   width: 88%;
@@ -560,21 +565,28 @@ a {
   top: 49px;
   right: 12%; }
 
-.slider-reviews_inner .item-icon {
-  position: absolute;
-  bottom: -100px;
-  left: 105px;
-  z-index: 1; }
+.slider-reviews_inner {
+  /* .item-icon{
+	 		position: absolute;
+	 		bottom: -100px;
+	 		left: 105px;
+	 		z-index: 1;
+	 	}  */ }
 
+.box-relative {
+  position: relative; }
+
+/*=================== footer ==================*/
 footer {
-  background: #5b6ceb; }
+  background: #5b6ceb;
+  margin-top: 296px; }
 
 .footer-inner {
   width: 84%;
   margin: 0 auto; }
 
 .footer-top .item-first {
-  width: 464px;
+  width: 42%;
   float: left; }
 
 .footer-top .item-seccond {
@@ -634,6 +646,13 @@ footer {
   .item-third a:hover {
     color: #fdd15c; }
 
+.footer-bottom {
+  padding: 39px 0;
+  text-align: center;
+  color: #b7bffc;
+  background: #5363d8;
+  font-size: 16px; }
+
 /*------ sprite -------*/
 .footer-top .item-first li a {
   background: url(../img/pic-34.png) no-repeat 0px 0px;
@@ -670,13 +689,6 @@ footer {
   width: 21px; }
   .footer-top .item-first li a.camera:hover {
     background-position: -74px -21px; }
-
-.footer-bottom {
-  padding: 39px 0;
-  text-align: center;
-  color: #b7bffc;
-  background: #5363d8;
-  font-size: 16px; }
 
 /* #show{
   width:100%;

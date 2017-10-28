@@ -523,7 +523,7 @@ a{
 	}
 }
 
-
+/*=========== content-tickets ==============*/
 
 .content-tickets{
 	width: 88%;
@@ -608,6 +608,14 @@ a{
 		}
 	}
 }
+
+/*================= slider-reviews ==============*/
+
+.box-relative{
+	position: relative;
+}
+
+
 
 .slider-reviews{
 	width: 88%;
@@ -709,19 +717,22 @@ a{
 }
 .slider-reviews_inner{
 	
-	.item-icon{
-		position: absolute;
-		bottom: -100px;
-		left: 105px;
-		z-index: 1;
-	}
+	 /* .item-icon{
+	 		position: absolute;
+	 		bottom: -100px;
+	 		left: 105px;
+	 		z-index: 1;
+	 	}  */
+}
+.box-relative{
+	position: relative;
 }
 
-
-
+/*=================== footer ==================*/
 
 footer{
 	background: #5b6ceb;
+	    margin-top: 296px;
 
 }
 .footer-inner{
@@ -731,8 +742,8 @@ footer{
 .footer-top{
 
 	.item-first{
-		width: 464px;
-		float: left;		
+		    width: 42%;
+    float: left;		
 	}
 	.item-seccond{
 		width: 45%;
@@ -820,6 +831,14 @@ footer{
 	}
 }
 
+.footer-bottom{
+	padding:39px 0;
+	text-align: center;
+	color: #b7bffc;
+	background: #5363d8;
+	font-size: 16px;
+}
+
 
 
 /*------ sprite -------*/
@@ -875,13 +894,6 @@ footer{
 	}
 }
 
-.footer-bottom{
-	padding:39px 0;
-	text-align: center;
-	color: #b7bffc;
-	background: #5363d8;
-	font-size: 16px;
-}
 
 
 

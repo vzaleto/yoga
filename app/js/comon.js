@@ -17,17 +17,27 @@ $(document).ready(function(){
   infinite: true,
   speed: 300,
   slidesToShow: 1
+  
 });
   });
 
+$(document).ready(function(){
+$('.item-icon').appendTo('.slider-reviews');
+$('.item-icon').css({
+  position:"absolute",
+  bottom:"-30px",
+  left:"324px",
+  "z-index": 10000
+});
 
+});
 
 
 /*$(document).ready(function(){
 function breakOverflow(elm) {
    var top = elm.offset().top;
    var left = elm.offset().left;
-   elm.appendTo($('.slider-reviews_inner'));
+   elm.appendTo($('.box-relative'));
    elm.css({
       position: 'absolute',
       left: 36+'%',
@@ -38,8 +48,8 @@ function breakOverflow(elm) {
    });
 }
 breakOverflow($('.item-icon'));
-}); */
-
+}); 
+*/
 
 
 
