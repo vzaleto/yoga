@@ -274,12 +274,11 @@ a{
 }
 .content-gallegy a:before {
 	position: absolute;
-	width: 32px;
-	height: 28px;
-	top: 40%;
+	    width: 58px;
+    height: 57px;
 	left: 50%;
 	margin: -14px 0 0 -10px;
-	background: url(https://wp-lessons.com/wp-content/uploads/2015/01/magnifier.png) no-repeat;
+	background: url(../img/pic-38.png) no-repeat;
 	content: '';
 	opacity: 0;
 	z-index: 1;
@@ -498,7 +497,7 @@ a{
 	.content-icon_top{
 
 		 .item-colum:nth-child(3) h5 {
-		 	    width: 68%;
+		 	    width: 65%;
 }
 }
 }
@@ -1022,9 +1021,29 @@ main{
     padding: 0 0 267px 0;
     background-size: contain;
 }
+/* #form input:focus:invalid{ when a field is considered invalid by the browser
+ 
+ border:1px solid red;
+} */
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {/* */
+outline:none;
+}
+#form .error-input:focus{ /* when a field is considered invalid by the browser */
+ border-color: red;
+}
 
 
-
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
 
 
 

@@ -37,17 +37,22 @@
  <div class="head-bottom_inner clearfix">
   <div class="form top-form">
    <h3>Trial Class</h3>
+   <form id="form" method="post" action="javascript:void(0);" onsubmit="ajax()">
    <ul>
-    <li><input type="text" name="first name" placeholder="Enter your name"></li>
-    <li><input type="text" name="enter" placeholder="Enter your phone"></li>
+    <li><input type="text" id="name" name="name" placeholder="Enter your name" autofocus required/></li>
+    <li><input type="tel" name="tel" id="tel" placeholder="Enter your phone" required><span id="error-danger"></span></li>
+
     <li>
      <select>
       <option>Chose your class</option>
       <option>Chose your class</option>
     </select>
   </li>
-  <li class="last-btn clearfix"><input type="submit" name="rrrrrrrr" value="Try it"></li>
+  <li class="last-btn clearfix"><input type="submit" name="" value="Try it"></li>
 </ul>
+</form>
+<div id="results"></div>
+<div id="results"></div>
 </div>
 <div class="slider-text">
  <h3>Just Balance<br> your Mind & Body </h3>

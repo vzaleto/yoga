@@ -111,80 +111,79 @@ function stickIt() {
   }
 }
 
-
-
-/*$(document).ready(function(){
-function breakOverflow(elm) {
-   var top = elm.offset().top;
-   var left = elm.offset().left;
-   elm.appendTo($('.box-relative'));
-   elm.css({
-      position: 'absolute',
-      left: 36+'%',
-      top: 87+'%',
-      bottom: 'auto',
-      right: 'auto',
-      'z-index': 10000
-   });
-}
-breakOverflow($('.item-icon'));
-}); 
-*/
-
-
-
-/*
-$(document).ready(function(){
-  $(function() {
-    var $slider = $('#slider'),
-        $slides = $('#slider').find('.slide'),
-        $next = $('.arrow.left'),
-        $dot = $('.dot.active'),
-        $dotNext = $('#page_view').next($dot),
-        slideIndex = 0,
-        sliding = false;
- 
-    $slides.eq(slideIndex).show();
-    $slider.on('click', '.arrow.left', function() {
-      $(".dot").removeClass('active');
-      $(".dot").eq(slideIndex-1).addClass('active');
-      
-      
-        if (sliding) return false;
-        sliding = true;
-          $slider.fadeOut(100, function() {
-                $slides.eq(slideIndex).hide();
-                if (--slideIndex >= $slides.length) {
-                  slideIndex = 0; 
-                } 
-            
-                $slides.eq(slideIndex).show();
-                $slider.fadeIn(150);
-                sliding = false;
-  
-            }); 
-          }); 
-
-       $slider.on('click', '.arrow.right', function() {
-      $(".dot").removeClass('active');
-      $(".dot").eq(slideIndex+1).addClass('active');
-      
-      
-        if (sliding) return false;
-        sliding = true;
-          $slider.fadeOut(100, function() {
-                $slides.eq(slideIndex).hide();
-                if (++slideIndex >= $slides.length) {
-                  slideIndex = 0;
-                }
-            
-                $slides.eq(slideIndex).show();
-                $slider.fadeIn(150);
-                sliding = false; 
-            
-            }); 
+/*function ajax() { //Ajax отправка формы
+    var msg = $("#form").serialize();
+    $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: msg,
+        success: function(data) {
+            $("#results").html(data);
+            if($("#results").val()=="SUCCESS VALIDATION"){
+              addData();
+            }
+        },
+        error:  function(xhr, str){
+            alert("Возникла ошибка!");
+        }
     });
-});
-});
+}
+ 
+ $(document).ready(function(){ //Валидация формы
+ 
+    $( "#form" ).validate({
+        rules:{
+            name:{
+                required: true
+            },
+            tel:{
+                required: true
+            }
+        },
+        messages:{
+            name:{
+                required: "This field is required"
+            },
+            tel:{
+                required: "This field is required"
+            }
+        },
+        submitHandler: function(form) {
+ 
+            addData();
+        }
+ 
+    });
+ 
+    $("#form input").click(function () {
+        $("#res").text("");
+ 
+    });
 
-*/
+
+ 
+});*/
+ 
+$(document).ready(function(){
+
+var pattern = /^\+[0-9]{12}$/i;
+
+ var tel = $("#tel");
+
+tel.blur(function(){
+  if(tel.val() != ""){
+    if (tel.val().search(pattern)==0){
+      $("#error-danger").text("");
+    }else{
+      alert("должны быть цифры и +");
+      $("#form input").addClass("error-input");
+    }
+
+  }else{
+    $("#form input").addClass("error-input");
+    alert("поля не заполнены");
+  }
+})
+ 
+})
+
